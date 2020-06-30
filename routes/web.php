@@ -28,5 +28,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PagesController@home');
 
 Route::get('/signup', 'PagesController@signup');
-
 Route::post('/registerpost', 'PagesController@registerpost');
