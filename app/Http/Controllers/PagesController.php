@@ -23,6 +23,9 @@ class PagesController extends Controller
         $firstname = $request->firstname;
         $lastname = $request->lastname;
 
-        return view('well', compact('firstname', 'lastname'));
+        $data = array('first' => $firstname, 'last' => $lastname);
+
+        return view('well', $data);
+        //return view('well', compact('firstname', 'lastname'));
     }
 }
