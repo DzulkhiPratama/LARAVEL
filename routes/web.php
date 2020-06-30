@@ -13,19 +13,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('welcomesanber');
-// });
-
-// Route::get('/signup', function () {
-//     return view('form');
-// });
-
-// Route::post('/well', function ($fname) {
-//     return view('well');
-// });
-
+//akan mengatur kontrol pembukaan home
 Route::get('/', 'PagesController@home');
 
+//akan mengatur kontrol pembukaan form sign up
 Route::get('/signup', 'PagesController@signup');
+
+//akan mengatur kontrol pembukaan page welcome, menampilkan nama
 Route::post('/registerpost', 'PagesController@registerpost');
